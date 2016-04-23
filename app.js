@@ -1,11 +1,11 @@
-var hours = ['10AM:', '11AM:', '12AM:', '1PM:', '2PM:', '3PM:', '4PM:', '5PM:', '6PM:'];
+var hours = ['10AM:', '11AM:', '12AM:', '1PM:', '2PM:', '3PM:', '4PM:', '5PM:',];
 
 var demand = [];
 
 var pikePlace = {
   name: 'Pike Place',
   min: 17,
-  max: 18,
+  max: 81,
   avgSales: 5.2,
   hourlySales: [],
   totalSales: 0,
@@ -14,10 +14,10 @@ var pikePlace = {
 },
   generateHourly: function (){
     for (var i = 0; i < hours.length; i++) {
-      hourlySales[i] = avgSales * customerPerHour(this.min, this.max);
-      totalSales++;
-    }
+      this.hourlySales.push(Math.floor(this.avgSales * this.customerPerHour(this.min, this.max)));
+      this.totalSales = this.totalSales + this.hourlySales[i];
   }
+}
 }
 
 // customerPerHour(minCustomers, maxCustomers);
