@@ -1,0 +1,126 @@
+html {
+  background-color: #ffe6e6;
+  color: black;
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 200px;
+}
+
+#PatSalmonCookies {
+  text-align: center;
+  font-family: 'Playfair Display', serif;
+  font-size: 30px;
+  padding-bottom: 30px;
+  font-weight: bold;
+}
+
+#headers {
+  padding-left: 200px;
+  padding-bottom: 100px;
+  text-align: left;
+  font-family: 'Playfair Display', serif;
+}
+
+#bodyCopy {
+  padding-left: 200px;
+  padding-bottom: 100px;
+  text-align: left;
+}
+
+#DataCopy {
+  padding-left: 200px;
+  padding-bottom: 100px;
+  text-align: left;
+}
+
+#headers2_0 {
+  padding-left: 900px;
+  padding-bottom: 30px;
+  text-align: left;
+
+}
+
+#headers3_0 {
+  padding-left: 600px;
+  padding-bottom: 30px;
+  background-color: #ffe6e6;
+  text-align: left;
+
+}
+
+#MainDiv {
+  text-align: left;
+  font-family: 'Playfair Display', serif;
+  font-size: 18px;
+  padding-bottom: 40px;
+  padding-left: 200px;
+}
+
+#Header1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 40px;
+}
+
+#Header2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 30px;
+}
+
+#Header3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 20px;
+}
+
+.ptagsforheaders {
+  font-size: 15px
+}
+
+#h1colors {
+  color: #3cbc8d
+}
+
+#BodyCopy {
+  font-size: 18px;
+  font-family: 'Avenir', serif;
+}
+
+#dataCopyHeader {
+  font-size: 18px;
+  font-family: 'courier', serif;
+}
+
+#boxgreen {
+  width: 100px;
+  height: 100px;
+  background: #F4BA70;
+  border-radius: 100%
+}
+
+#boxsalmon {
+  width: 100px;
+  height: 100px;
+  background: #ffffff;
+  border-radius: 100%
+
+}
+
+#boxorange {
+  width: 100px;
+  height: 100px;
+  background: #ffe848;
+  border-radius: 100%
+}
+
+.hexcode {
+  text-align: left;
+}
+
+#ColorPalette {
+  text-align: left;
+  font-family: 'Playfair Display', serif;
+  font-size: 18px;
+}
