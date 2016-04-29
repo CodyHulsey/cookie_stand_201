@@ -42,7 +42,6 @@ Store.prototype.render = function() {
   liEl_two.textContent = 'Total: ' + this.totals;
   ulEl.appendChild(liEl_two);
 };
-
 // var pikeStore
 //
 // }
