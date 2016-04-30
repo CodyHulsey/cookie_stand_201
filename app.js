@@ -21,17 +21,17 @@ Store.prototype.generateHourly = function(arr, totals, avg, ran, hour) {
 
 Store.prototype.render = function() {
   this.generateHourly(this.hourlySales, this.totals, this.avgSales, this.customerPerHour, hours);
-  var sectionEl = document.getElementById('stores');
-  var newStore = document.createElement('section');
-  sectionEl.appendChild(newStore);
-  var ulEl = document.createElement('ul');
+  var tableEl = document.getElementById('stores');
+  var newStore = document.createElement('tr');
+  tableEl.appendChild(newStore);
+  var ulEl = document.createElement('th');
 
   for(var i = 0; i < hours.length; i++) {
-    var liEl = document.createElement('li');
+    var liEl = document.createElement('td');
     liEl.textContent = hours[i] + ': ' + this.hourlySales[i];
     ulEl.appendChild(liEl);
   }
-  var liEl_two = document.createElement('li');
+  var liEl_two = document.createElement('td');
   liEl_two.textContent = 'Total: ' + this.totals;
   ulEl.appendChild(liEl_two);
   newStore.textContent = this.name;
@@ -45,6 +45,7 @@ var bellevueSquare = new Store('Bellevue Square', 20, 48, 3.3, []);
 var alki = new Store('Alki', 3, 24, 2.6, []);
 
 var hours = ['10AM', '11AM', '12AM', '1PM', '2PM', '3PM', '4PM', '5PM',];
+
 
 pikePlace.render();
 seaTacAirport.render();
