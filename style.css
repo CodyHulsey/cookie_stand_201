@@ -18,38 +18,21 @@ img {
   font-weight: bold;
 }
 
-#headers {
-  padding-left: 200px;
-  padding-bottom: 100px;
+#header3color {
+  color: #A1BAA5;
+}
+
+.h_line {
+  width: 100%;
+  height: 1px;
+  background: #fff;
+}
+
+.pcopy {
   text-align: left;
   font-family: 'Playfair Display', serif;
-}
-
-#bodyCopy {
-  padding-left: 200px;
-  padding-bottom: 100px;
-  text-align: left;
-}
-
-#DataCopy {
-  padding-left: 200px;
-  padding-bottom: 100px;
-  text-align: left;
-}
-
-#headers2_0 {
-  padding-left: 900px;
-  padding-bottom: 30px;
-  text-align: left;
-
-}
-
-#headers3_0 {
-  padding-left: 600px;
-  padding-bottom: 30px;
-  background-color: #ffe6e6;
-  text-align: left;
-
+  font-size: 18px;
+  padding-bottom: 10px;
 }
 
 #MainDiv {
@@ -58,6 +41,12 @@ img {
   font-size: 18px;
   padding-bottom: 40px;
   padding-left: 200px;
+}
+
+#headers {
+  padding-bottom: 100px;
+  text-align: left;
+  font-family: 'Playfair Display', serif;
 }
 
 #Header1 {
@@ -73,50 +62,61 @@ img {
 #Header3 {
   font-family: 'Playfair Display', serif;
   font-size: 20px;
+  color: #A1BAA5;
+}
+
+#bodyCopyDiv {
+  padding-bottom: 100px;
+  text-align: left;
+}
+
+#dataCopyDiv {
+  padding-bottom: 100px;
+  text-align: left;
 }
 
 .ptagsforheaders {
   font-size: 15px
 }
 
-#BodyCopy {
+#bodycopy_header {
   font-size: 18px;
   font-family: 'Avenir', serif;
 }
 
-#dataCopyHeader {
+#datacopy_header {
   font-size: 18px;
   font-family: 'courier', serif;
 }
 
-#boxgreen {
+#ColorPaletteHeader {
+  text-align: left;
+  font-family: 'Playfair Display', serif;
+  font-size: 18px;
+}
+
+#boxmint {
   width: 100px;
   height: 100px;
-  background: #F4BA70;
+  background: #C8DDC1;
+  border-radius: 100%
+
+}
+
+#boxdarkgreen {
+  width: 100px;
+  height: 100px;
+  background: #487075;
   border-radius: 100%
 }
 
-#boxsalmon {
+#boxdarkmint {
   width: 100px;
   height: 100px;
-  background: #ffffff;
-  border-radius: 100%
-
-}
-
-#boxorange {
-  width: 100px;
-  height: 100px;
-  background: #ffe848;
+  background: #A1BAA5;
   border-radius: 100%
 }
 
 .hexcode {
   text-align: left;
-}
-
-#ColorPalette {
-  text-align: left;
-  font-family: 'Playfair Display', serif;
-  font-size: 18px;
 }
