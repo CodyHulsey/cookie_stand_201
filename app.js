@@ -27,11 +27,11 @@ Store.prototype.render = function() {
   var ulEl = document.createElement('th');
 
   for(var i = 0; i < hours.length; i++) {
-    var liEl = document.createElement('td');
+    var liEl = document.createElement('tr');
     liEl.textContent = hours[i] + ': ' + this.hourlySales[i];
     ulEl.appendChild(liEl);
   }
-  var liEl_two = document.createElement('td');
+  var liEl_two = document.createElement('tr');
   liEl_two.textContent = 'Total: ' + this.totals;
   ulEl.appendChild(liEl_two);
   newStore.textContent = this.name;
