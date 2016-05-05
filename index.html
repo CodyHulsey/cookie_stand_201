@@ -1,14 +1,46 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet.css" type="text/css" href="style.css">
   <meta charset="UTF-8">
-  <title>Document</title>
+  <title>Events, Forms, Tables</title>
 </head>
 <body>
+  <form id="myForm">
+    <fieldset>
+      <legend>Store Name</legend>
+
+      <label for="storeName">Store Name</label>
+      <input type="text" id='storeName'></input>
+
+      <label for='min'>
+        Minimum Customers
+      <input type="number" id='min'></input>
+      </label>
+    </fieldset>
+
+    <fieldset>
+      <legend>Maximum Customers</legend>
+      <label for="max">max</label>
+      <input type="number" id='max'></input>
+    </fieldset>
+
+    <fieldset>
+      <legend>Submit</legend>
+      <input type='submit' value='Submit' id='submit'</input>
+    </fieldset>
+  </form>
+  <table id='myTable'>
+    <tr>
+      <th>First</th>
+      <th>Last</th>
+      <th>Age</th>
+    </tr>
+  </table>
   <main>
   <table id="stores"></table>
-  <main>
+
+  </main>
 <script src="app.js" type="text/javascript"></script>
 </body>
 </html>

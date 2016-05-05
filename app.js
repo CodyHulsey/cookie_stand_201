@@ -1,3 +1,41 @@
+// var submit = document.getElementById('test');
+//
+// function foo() {
+//   // console.log('hello word');
+//   console.log(this);
+//   // this.removeEventListener('click', foo);
+// }
+// // submit.addEventListener('click', foo);
+//
+// var formEl = document.getElementById('myForm');
+// var inputSN = document.getElementById('storeName');
+// var inputmin = document.getElementById('min');
+// var inputmax = document.getElementById('max');
+// var tableEl = document.getElementById('myForm');
+//
+
+// function getInputs() {
+//   event.preventDefault();
+//   console.log(event.target);
+// }
+
+myForm.addEventListener('submit', function(event) {
+  event.preventDefault();
+  // console.log(event.target[1].value);
+  console.log(typeof inputAge.value);
+  var trEl = document.createElement('tr');
+  var tdOne = document.createElement('td');
+  var tdTwo = document.createElement('td');
+  var tdThree = document.createElement('td');
+  tdOne.textContent = inputFN.value;
+  tdTwo.textContent = inputLN.value;
+  tdThree.textContent = inputAge.value;
+  trEl.appendChild(tdOne);
+  trEl.appendChild(tdTwo);
+  trEl.appendChild(tdThree);
+  tableEl.appendChild(trEl);
+});
+
 function Store(name, min, max, avgSales, hourlySales, totals, customerPerHour, generateHourly) {
   this.name = name;
   this.min = min;
@@ -19,19 +57,23 @@ Store.prototype.generateHourly = function(arr, totals, avg, ran, hour) {
   }
 };
 
+// (Store.renderTable = function() {
+//
+// }
+
 Store.prototype.render = function() {
   this.generateHourly(this.hourlySales, this.totals, this.avgSales, this.customerPerHour, hours);
   var tableEl = document.getElementById('stores');
-  var newStore = document.createElement('tr');
+  var newStore = document.createElement('th');
   tableEl.appendChild(newStore);
   var ulEl = document.createElement('th');
 
   for(var i = 0; i < hours.length; i++) {
-    var liEl = document.createElement('tr');
+    var liEl = document.createElement('th');
     liEl.textContent = hours[i] + ': ' + this.hourlySales[i];
     ulEl.appendChild(liEl);
   }
-  var liEl_two = document.createElement('tr');
+  var liEl_two = document.createElement('th');
   liEl_two.textContent = 'Total: ' + this.totals;
   ulEl.appendChild(liEl_two);
   newStore.textContent = this.name;
@@ -45,6 +87,8 @@ var bellevueSquare = new Store('Bellevue Square', 20, 48, 3.3, []);
 var alki = new Store('Alki', 3, 24, 2.6, []);
 
 var hours = ['10AM', '11AM', '12AM', '1PM', '2PM', '3PM', '4PM', '5PM',];
+
+// var tbl;
 
 
 pikePlace.render();
