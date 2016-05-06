@@ -3,6 +3,19 @@ html {
   color: black;
 }
 
+nav {
+  text-align: center;
+}
+
+table {
+  border: 2px solid black;
+}
+
+form {
+  width: 50%;
+  border: 2px solid black;
+}
+
 img {
   display: block;
   margin-left: auto;
@@ -20,6 +33,11 @@ img {
 
 #header3color {
   color: #A1BAA5;
+}
+
+.mainPageBlock {
+  text-align: center;
+
 }
 
 .h_line {

@@ -49,21 +49,21 @@ Store.prototype.render = function() {
   //
   // Store.prototype.render = function() {
   //   this.generateHourly();
-    var dataRows = document.createElement('tr');
-    var tdStoreNames = document.createElement('tr');
-    tdStoreNames.appendChild(document.createTextNode(this.name));
-    dataRows.appendChild(tdStoreNames);
-    tableEl.appendChild(dataRows);
+  var dataRows = document.createElement('tr');
+  var tdStoreNames = document.createElement('tr');
+  tdStoreNames.appendChild(document.createTextNode(this.name));
+  dataRows.appendChild(tdStoreNames);
+  tableEl.appendChild(dataRows);
 
-    for(var i = 0; i < hours.length; i++) {
-      var dataHours = document.createElement('td');
-      dataHours.textContent = this.hourlySales[i];
-      dataRows.appendChild(dataHours);
-    }
-    var dataTotals = document.createElement('td');
-    dataTotals.textContent = this.totals;
-    dataRows.appendChild(dataTotals);
-  };
+  for(var i = 0; i < hours.length; i++) {
+    var dataHours = document.createElement('td');
+    dataHours.textContent = this.hourlySales[i];
+    dataRows.appendChild(dataHours);
+  }
+  var dataTotals = document.createElement('td');
+  dataTotals.textContent = this.totals;
+  dataRows.appendChild(dataTotals);
+};
 
 pikePlace.render();
 seaTacAirport.render();
@@ -88,7 +88,7 @@ Store.renderNew = function(obj) {
   tableEl.appendChild(newRow);
 };
 
-var formEl = document.getElementById('myForm');
+var myForm = document.getElementById('myForm');
 
 myForm.addEventListener('submit', function(event) {
   event.preventDefault();
@@ -101,13 +101,4 @@ myForm.addEventListener('submit', function(event) {
   newShop.generateHourly();
 
   Store.renderNew(newShop);
-
-  var inputSN = document.getElementById('storeName');
-  var inputMin = document.getElementById('min');
-  var inputMax = document.getElementById('max');
-  var inputAvg = document.getElementById('avg');
-  var tableEl = document.getElementById('myForm');
-  var insertNewStore = new Store(newStoreName, newMinCust, newMaxCust, newAvgCustSale);
-
-  newStoreName.textContent = event.target.newstorelocation.value;
 });
