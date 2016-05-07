@@ -26,8 +26,8 @@ Store.prototype.generateHourly = function(arr, totals, avg, ran, hour) {
     this.totals += ran;
   }
 };
+
 var tableEl = document.getElementById('stores');
-// var newStore = document.createElement('tr');
 var rowEl = document.createElement('tr');
 var emptyCell = document.createElement('th');
 var totalsTitle = document.createElement('th');
@@ -44,11 +44,10 @@ for(var i = 0; i < hours.length; i++) {
   rowEl.appendChild(tHours);
 }
 rowEl.appendChild(totalsTitle);
+
 Store.prototype.render = function() {
-  this.generateHourly(this.hourlySales, this.totals, this.avgSales, this.customerPerHour, hours);
-  //
-  // Store.prototype.render = function() {
-  //   this.generateHourly();
+  this.generateHourly();
+
   var dataRows = document.createElement('tr');
   var tdStoreNames = document.createElement('tr');
   tdStoreNames.appendChild(document.createTextNode(this.name));
@@ -96,7 +95,6 @@ myForm.addEventListener('submit', function(event) {
   var newMinCust = parseInt(event.target.min.value);
   var newMaxCust = parseInt(event.target.max.value);
   var newAvgCustSale = parseFloat(event.target.avg.value);
-  // console.log(newStoreName);
   var newShop = new Store(newStoreName, newMinCust, newMaxCust, newAvgCustSale);
   newShop.generateHourly();
 

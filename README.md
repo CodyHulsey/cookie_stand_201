@@ -9,3 +9,4 @@ During this assignment I completed the following:
 - Created a table that was laid out cleanly
 - Utilized addEventListener so that individuals could add their own stores to the sales page
 - Cleaned up my HTML code
+- Created a styled navigation bar
