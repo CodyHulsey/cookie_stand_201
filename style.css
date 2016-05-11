@@ -1,33 +1,83 @@
 html {
-  background-color: #ffe6e6;
-  color: black;
-}
-
-nav {
-  text-align: center;
+  background-color: #6660CD;
 }
 
 table {
   border: 2px solid black;
 }
 
+body {
+  max-width: 960px;
+  min-width: 400px;
+  margin: auto;
+}
+
+h1 {
+  text-align: center;
+}
+
+p {
+  text-align: center;
+}
+
+.smallerCopy {
+  font-size: 12px;
+}
+
+.largerCopy {
+  font-size: 20px;
+}
+
 form {
   width: 50%;
   border: 2px solid black;
+  color: white;
 }
 
-img {
+.mainLogo {
+  height: 40px;
+  position: -20%;
+}
+
+.tagLine {
+  font-size: 12px;
+  font-style: italic;
+  color: white;
+  text-align: left;
+}
+
+.salmonFamily {
   display: block;
-  margin-left: auto;
   margin-right: auto;
+  width: 100%;
+  opacity: 0.4;
+  background-color: black;
+  position: relative;
+}
+
+.companyName {
+  left: 0;
+  position: absolute;
+  text-align: center;
+  top: 250px;
+  width: 100%;
+  color: white;
+  font-size: 60px;
+  font-family: Arial, 'Work Sans', sans-serif;
+}
+
+.mainPageBlock {
+  color: white;
+  font-family: Arial, 'Work Sans', sans-serif;
 }
 
 #navigation {
   list-style-type: none;
-  margin: 0;
+  margin: auto;
   padding: 0;
   overflow: hidden;
-  background-color: #333;
+  background-color: #6660CD;
+  width: 100%;
 }
 
 #navigation li {
@@ -35,133 +85,22 @@ img {
 }
 
 #navigation li a {
-  display: block;
+  display: inline-block;
   color: white;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
+  font-family: Arial, 'Work Sans', sans-serif;
 }
 
 #navigation li a:hover {
   background-color: #111;
 }
 
-#PatSalmonCookies {
-  text-align: center;
-  font-family: 'Playfair Display', serif;
-  font-size: 30px;
-  padding-bottom: 30px;
-  font-weight: bold;
-}
-
-#header3color {
-  color: #A1BAA5;
-}
-
-.mainPageBlock {
-  text-align: center;
-
-}
-
-.h_line {
-  width: 100%;
-  height: 1px;
-  background: #fff;
-}
-
-.pcopy {
-  text-align: left;
-  font-family: 'Playfair Display', serif;
-  font-size: 18px;
-  padding-bottom: 10px;
-}
-
-#MainDiv {
-  text-align: left;
-  font-family: 'Playfair Display', serif;
-  font-size: 18px;
-  padding-bottom: 40px;
-  padding-left: 200px;
-}
-
-#headers {
-  padding-bottom: 100px;
-  text-align: left;
-  font-family: 'Playfair Display', serif;
-}
-
-#Header1 {
-  font-family: 'Playfair Display', serif;
-  font-size: 40px;
-}
-
-#Header2 {
-  font-family: 'Playfair Display', serif;
-  font-size: 30px;
-}
-
-#Header3 {
-  font-family: 'Playfair Display', serif;
-  font-size: 20px;
-  color: #A1BAA5;
-}
-
-#bodyCopyDiv {
-  padding-bottom: 100px;
-  text-align: left;
-}
-
-#dataCopyDiv {
-  padding-bottom: 100px;
-  text-align: left;
-}
-
-.ptagsforheaders {
-  font-size: 15px
-}
-
-#bodycopy_header {
-  font-size: 18px;
-  font-family: 'Avenir', serif;
-}
-
-#datacopy_header {
-  font-size: 18px;
-  font-family: 'courier', serif;
-}
-
-#ColorPaletteHeader {
-  text-align: left;
-  font-family: 'Playfair Display', serif;
-  font-size: 18px;
-}
-
-#boxmint {
-  width: 100px;
-  height: 100px;
-  background: #C8DDC1;
-  border-radius: 100%
-
-}
-
-#boxdarkgreen {
-  width: 100px;
-  height: 100px;
-  background: #487075;
-  border-radius: 100%
-}
-
-#boxdarkmint {
-  width: 100px;
-  height: 100px;
-  background: #A1BAA5;
-  border-radius: 100%
-}
-
-.hexcode {
-  text-align: left;
-}
-
-#locationsList {
-  list-style-type: none;
+.tshirt {
+  display: block;
+  margin-right: auto;
+  background-color: black;
+  position: relative;
+  align-content: center;
 }
