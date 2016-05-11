@@ -1,11 +1,5 @@
 var hours = ['10AM', '11AM', '12AM', '1PM', '2PM', '3PM', '4PM', '5PM',];
 
-var pikePlace = new Store('Pike Place', 17, 88, 5.2);
-var seaTacAirport = new Store('SeaTac Airport', 6, 24, 1.2);
-var Southcenter = new Store('Southcenter', 11, 38, 1.9);
-var bellevueSquare = new Store('Bellevue Square', 20, 48, 3.3);
-var alki = new Store('Alki', 3, 24, 2.6);
-
 function Store(name, min, max, avgSales) {
   this.name = name;
   this.min = min;
@@ -26,28 +20,29 @@ Store.prototype.generateHourly = function(arr, totals, avg, ran, hour) {
     this.totals += ran;
   }
 };
+Store.prototype.renderTable = function() {
+  var tableEl = document.getElementById('stores');
+  var rowEl = document.createElement('tr');
+  var emptyCell = document.createElement('th');
+  var totalsTitle = document.createElement('th');
 
-var tableEl = document.getElementById('stores');
-var rowEl = document.createElement('tr');
-var emptyCell = document.createElement('th');
-var totalsTitle = document.createElement('th');
+  emptyCell.textContent = '';
+  totalsTitle.textContent = 'Totals';
 
-emptyCell.textContent = '';
-totalsTitle.textContent = 'Totals';
+  tableEl.appendChild(rowEl);
+  rowEl.appendChild(emptyCell);
 
-tableEl.appendChild(rowEl);
-rowEl.appendChild(emptyCell);
-
-for(var i = 0; i < hours.length; i++) {
-  var tHours = document.createElement('th');
-  tHours.textContent = hours[i];
-  rowEl.appendChild(tHours);
-}
-rowEl.appendChild(totalsTitle);
+  for(var i = 0; i < hours.length; i++) {
+    var tHours = document.createElement('th');
+    tHours.textContent = hours[i];
+    rowEl.appendChild(tHours);
+  }
+  rowEl.appendChild(totalsTitle);
+}();
 
 Store.prototype.render = function() {
   this.generateHourly();
-
+  var tableEl = document.getElementById('stores');
   var dataRows = document.createElement('tr');
   var tdStoreNames = document.createElement('tr');
   tdStoreNames.appendChild(document.createTextNode(this.name));
@@ -63,6 +58,12 @@ Store.prototype.render = function() {
   dataTotals.textContent = this.totals;
   dataRows.appendChild(dataTotals);
 };
+
+var pikePlace = new Store('Pike Place', 17, 88, 5.2);
+var seaTacAirport = new Store('SeaTac Airport', 6, 24, 1.2);
+var Southcenter = new Store('Southcenter', 11, 38, 1.9);
+var bellevueSquare = new Store('Bellevue Square', 20, 48, 3.3);
+var alki = new Store('Alki', 3, 24, 2.6);
 
 pikePlace.render();
 seaTacAirport.render();
