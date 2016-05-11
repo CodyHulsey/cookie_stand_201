@@ -72,6 +72,7 @@ bellevueSquare.render();
 alki.render();
 
 Store.renderNew = function(obj) {
+  var tableEl = document.getElementById('stores');
   var newRow = document.createElement('tr');
   var nameTd = document.createElement('td');
   nameTd.textContent = obj.name;
