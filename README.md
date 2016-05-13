@@ -3,6 +3,7 @@
 
 Created by Cody Hulsey
 
+<<<<<<< HEAD
 Date: 5/12/2016
 
 During this assignment I completed the following:
@@ -15,3 +16,12 @@ During this assignment I completed the following:
 - I used proper HTML5
 - I created a logo and tagline
 - Practiced consistent formatting across different pages 
+=======
+Date: 4/27/2016
+
+During this assignment I completed the following:
+- Created my first render function
+- Utilized the generate random number
+- Created a table that lists projected cookie sales during the day based on the properties/keys
+- Once I built the render function, I created a stores array that utilized the for loop function and in the end documented the cookie sales for five stores
+>>>>>>> 1620c21bba76d57c81db40f8ef158c23f2447b38
