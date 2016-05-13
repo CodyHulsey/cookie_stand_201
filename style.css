@@ -65,12 +65,12 @@ header p {
   width: 100%;
   color: black;
   font-size: 60px;
-  font-family: Arial, 'Work Sans', sans-serif;
+  font-family: 'Work Sans', sans-serif;
 }
 
 .mainPageBlock {
   color: black;
-  font-family: Arial, 'Work Sans', sans-serif;
+  font-family: 'Work Sans', sans-serif;
   text-align: left right;
 }
 
@@ -109,7 +109,7 @@ header p {
 }
 
 .headers {
-  font-family: 'Playfair Display', serif;
+  font-family: 'Work Sans', sans-serif;
   padding-bottom: 50px;
 }
 
@@ -118,7 +118,8 @@ header p {
 }
 
 .bodyCopy p {
-  font-family: "Avenir", serif;
+  font-family: 'Work Sans', sans-serif;
+
 }
 
 .dataCopy {
