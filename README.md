@@ -23,7 +23,11 @@ During this assignment I completed the following:
 - I used proper HTML5
 - I created a logo and tagline
 - Practiced consistent formatting across different pages
+
+
 =======
+
+
 201 Class Project - OOP JavaScript
 
 Created by Cody Hulsey
