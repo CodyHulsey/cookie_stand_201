@@ -1,9 +1,13 @@
 html {
-  background-color: #6660CD;
+  background: linear-gradient(#FFEAEA, #ffffff);
 }
 
 table {
   border: 2px solid black;
+}
+
+table td {
+  border: 1px solid black;
 }
 
 body {
@@ -12,37 +16,35 @@ body {
   margin: auto;
 }
 
-h1 {
-  text-align: center;
-}
-
-p {
-  text-align: center;
-}
-
-.smallerCopy {
-  font-size: 12px;
-}
-
-.largerCopy {
-  font-size: 20px;
-}
-
 form {
   width: 50%;
-  border: 2px solid black;
-  color: white;
+  border: none;
+  color: black;
+  text-align: left;
 }
 
-.mainLogo {
+form input {
+  -webkit-transition: width 0.4s ease-in-out;
+  transition: width 0.4s ease-in-out;
+}
+
+input[type=text]:focus {
+  width: 100%;
+}
+
+input[type=submit] {
+  background-color: #FF4E4E;
+}
+
+header img {
   height: 40px;
-  position: -20%;
+  position: 80%;
 }
 
-.tagLine {
+header p {
   font-size: 12px;
   font-style: italic;
-  color: white;
+  color: black;
   text-align: left;
 }
 
@@ -51,7 +53,7 @@ form {
   margin-right: auto;
   width: 100%;
   opacity: 0.4;
-  background-color: black;
+  background-color: white;
   position: relative;
 }
 
@@ -61,14 +63,23 @@ form {
   text-align: center;
   top: 250px;
   width: 100%;
-  color: white;
+  color: black;
   font-size: 60px;
   font-family: Arial, 'Work Sans', sans-serif;
 }
 
 .mainPageBlock {
-  color: white;
+  color: black;
   font-family: Arial, 'Work Sans', sans-serif;
+  text-align: left right;
+}
+
+.mainPageBlock p {
+  font-size: 12px;
+}
+
+.mainPageBlock h1 {
+  font-size: 20px;
 }
 
 #navigation {
@@ -76,7 +87,7 @@ form {
   margin: auto;
   padding: 0;
   overflow: hidden;
-  background-color: #6660CD;
+  background-color: #FFEAEA;
   width: 100%;
 }
 
@@ -86,7 +97,7 @@ form {
 
 #navigation li a {
   display: inline-block;
-  color: white;
+  color: black;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -94,13 +105,54 @@ form {
 }
 
 #navigation li a:hover {
-  background-color: #111;
+  background-color: #FF4E4E;
 }
 
-.tshirt {
-  display: block;
-  margin-right: auto;
-  background-color: black;
+#dataCopyDiv {
+  padding-bottom: 100px;
+  text-align: left;
+}
+
+#boxmint {
+  width: 100px;
+  height: 100px;
+  background: #C8DDC1;
+  border-radius: 100%
+}
+
+ +#boxdarkgreen {
+   width: 100px;
+   height: 100px;
+   background: #487075;
+   border-radius: 100%
+}
+
+#boxdarkmint {
+  width: 100px;
+  height: 100px;
+  background: #A1BAA5;
+  border-radius: 100%;
+}
+
+.merch {
+  float: left;
+  border-top: 3px black;
+  border-bottom: 3px black;
+  padding-bottom: 50px;
+}
+
+.merch p {
+  width: 75%;
+}
+
+.merch img {
+  float: right;
+}
+
+.salmonRelatedEvents {
   position: relative;
-  align-content: center;
+}
+
+footer {
+  text-align: center;
 }
