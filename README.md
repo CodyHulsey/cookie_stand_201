@@ -4,6 +4,14 @@
 Created by Cody Hulsey
 
 Date: 5/12/2016
+- Merged my branch level6 to master
+- implemented consistency across my pages so that it reflects the style guide
+- Placed my images inside of a folder. A lot cleaner now.
+
+================
+
+
+Date: 5/12/2016
 
 During this assignment I completed the following:
 - Created a home page, sales page, and style guide
@@ -16,12 +24,11 @@ During this assignment I completed the following:
 - I created a logo and tagline
 - Practiced consistent formatting across different pages
 =======
-# cookie_stand_201
-  201 Class Project - OOP JavaScript
+201 Class Project - OOP JavaScript
 
- +Created by Cody Hulsey
+Created by Cody Hulsey
 
- +Date: 5/5/2016
+Date: 5/5/2016
 
  During this assignment I completed the following:
  - Created a table that was laid out cleanly
@@ -38,4 +45,3 @@ During this assignment I completed the following:
 - Utilized the generate random number
 - Created a table that lists projected cookie sales during the day based on the properties/keys
 - Once I built the render function, I created a stores array that utilized the for loop function and in the end documented the cookie sales for five stores
->>>>>>> 1620c21bba76d57c81db40f8ef158c23f2447b38
