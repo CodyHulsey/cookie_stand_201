@@ -3,7 +3,6 @@
 
 Created by Cody Hulsey
 
-<<<<<<< HEAD
 Date: 5/12/2016
 
 During this assignment I completed the following:
@@ -15,8 +14,23 @@ During this assignment I completed the following:
 - I DRY'd out my code
 - I used proper HTML5
 - I created a logo and tagline
-- Practiced consistent formatting across different pages 
+- Practiced consistent formatting across different pages
 =======
+# cookie_stand_201
+  201 Class Project - OOP JavaScript
+
+ +Created by Cody Hulsey
+
+ +Date: 5/5/2016
+
+ During this assignment I completed the following:
+ - Created a table that was laid out cleanly
+ - Utilized addEventListener so that individuals could add their own stores to the sales page
+ - Cleaned up my HTML code
+ - Created a styled navigation bar
+
+=======
+
 Date: 4/27/2016
 
 During this assignment I completed the following:
